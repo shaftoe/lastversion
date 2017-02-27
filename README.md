@@ -1,4 +1,7 @@
 # Lastversion: an HTTP service to fetch last stable version of OpenSource projects
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
+[![Go Report Card](https://goreportcard.com/badge/github.com/shaftoe/lastversion)](https://goreportcard.com/report/github.com/shaftoe/lastversion)
+[![Issue Count](https://codeclimate.com/github/shaftoe/lastversion/badges/issue_count.svg)](https://codeclimate.com/github/shaftoe/lastversion)
 
 _Lastversion_ is a small [serverless][6] project that I built [to teach myself][7] a bit of [Go][1] and [OpenWhisk][2] along the way. It's making use of [OpenWhisk built-in Docker support][4] to run the Go application (lastversion.go) in a container, which is forking the provided (statically linked) `git` binary to fetch tags from public Git repositories, then selects the last stable version and returns it in json format
 
@@ -22,7 +25,7 @@ _Lastversion_ is a small [serverless][6] project that I built [to teach myself][
 
 ## Current limitations
 
-- Lastversion accepts only a very limited list of projects, but if you're interested in having more supported, just send (me a messsage|a pull request) and I'll be happy to add. Obviously one natural next step could be to let the client provide the (GitHub) url and regexp prefix needed to devise the last stable version to make it more general
+- Lastversion supports only a very limited list of projects, but if you're interested in having more supported, just send (me a messsage|a pull request) and I'll be happy to add. One obvious next step could be to let the client provide the (GitHub) url and regexp prefix needed to devise the last stable version to make it more general
 - the docker image running the app has no git binary available, so we ship a statically linked git binary which has some limitations, so for example `git://` is the only transport protocol supported
 - the [OpenWhisk API gateway][3] support is still experimental and hence very limited in features, so it's not possible to support a url scheme like `http://lastversion.info/docker` or similar, nor is possible to return anything other then `Content-Type: application/json` as response
 

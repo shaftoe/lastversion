@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.2.0] - 2017-02-27
+### Added
+- codeclimate and goreportcard support/links
+### Changed
+- use new version of `godevsum` API (*GitFetcher)
+- simplified code with `gofmt -s`
+
 ## [0.1.0] - 2017-02-24
 ### Added
 - first draft of the Go app
