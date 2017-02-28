@@ -8,22 +8,28 @@ import (
 	"github.com/shaftoe/godevsum"
 )
 
-const version = "0.2.0"
+const version = "0.2.1"
 
 type gitRemote struct {
 	url, regexpPrefix string
 }
 
 var projects = map[string]gitRemote{
+	"chef":           {"git://github.com/chef/chef", "refs/tags/v"},
 	"consul":         {"git://github.com/hashicorp/consul", "refs/tags/v"},
+	"cpython":        {"git://github.com/python/cpython", "refs/tags/v"},
 	"docker":         {"git://github.com/docker/docker", "refs/tags/v"},
 	"fabric":         {"git://github.com/fabric/fabric", "refs/tags/"},
 	"git":            {"git://github.com/git/git", "refs/tags/v"},
 	"go":             {"git://github.com/golang/go", "refs/tags/go"},
 	"home-assistant": {"git://github.com/home-assistant/home-assistant", "refs/tags/"},
-	"lastversion":    {"git://github.com/shaftoe/lastversion", "refs/tags/v"},
 	"kubernetes":     {"git://github.com/kubernetes/kubernetes", "refs/tags/v"},
+	"lastversion":    {"git://github.com/shaftoe/lastversion", "refs/tags/v"},
+	"packer":         {"git://github.com/mitchellh/packer", "refs/tags/v"},
 	"prometheus":     {"git://github.com/prometheus/prometheus", "refs/tags/v"},
+	"puppet":         {"git://github.com/puppetlabs/puppet", "refs/tags/"},
+	"react":          {"git://github.com/facebook/react", "refs/tags/v"},
+	"salt":           {"git://github.com/saltstack/salt", "refs/tags/v"},
 	"terraform":      {"git://github.com/hashicorp/terraform.git", "refs/tags/v"},
 	"vault":          {"git://github.com/hashicorp/vault", "refs/tags/v"},
 }
