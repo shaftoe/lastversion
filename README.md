@@ -3,7 +3,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/shaftoe/lastversion)](https://goreportcard.com/report/github.com/shaftoe/lastversion)
 [![Issue Count](https://codeclimate.com/github/shaftoe/lastversion/badges/issue_count.svg)](https://codeclimate.com/github/shaftoe/lastversion)
 
-[_Lastversion_][9] is a small [serverless][6] project that I built [to teach myself][7] a bit of [Go][1] and [OpenWhisk][2] along the way. It's making use of [OpenWhisk built-in Docker support][4] to run the Go application (lastversion.go) in a container, which is forking the provided (statically linked) `git` binary to fetch tags from public Git repositories, then selects the last stable version and returns it in json format
+[_Lastversion_][9] is a [small serverless project][6] that I built [to teach myself][7] a bit of [Go][1] and [OpenWhisk][2] along the way. It's making use of [OpenWhisk built-in Docker support][4] to run the Go application (lastversion.go) in a container, which is forking the provided (statically linked) `git` binary to fetch tags from public Git repositories, then selects the last stable version and returns it in json format
 
 ## Usage
 
@@ -70,7 +70,7 @@ Compiled from sources (v2.11.1) with those flags: `$ make "CFLAGS=${CFLAGS} -sta
 [3]: https://github.com/openwhisk/openwhisk/blob/master/docs/apigateway.md "API gateway"
 [4]: https://www.ibm.com/blogs/bluemix/2017/01/docker-bluemix-openwhisk/ "Docker support"
 [5]: https://github.com/openwhisk/openwhisk#quick-start "OpenWhisk devel quick start"
-[6]: https://en.wikipedia.org/wiki/Serverless_computing
+[6]: http://alexanderfortin.tumblr.com/post/157820499911/lastversion-a-go-serverless-proof-of-concept
 [7]: https://github.com/shaftoe/godevsum
 [8]: https://console.ng.bluemix.net/openwhisk/
 [9]: https://lastversion.info/

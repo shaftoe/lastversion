@@ -30,6 +30,7 @@ var projects = map[string]gitRemote{
 	"puppet":         {"git://github.com/puppetlabs/puppet", "refs/tags/"},
 	"react":          {"git://github.com/facebook/react", "refs/tags/v"},
 	"salt":           {"git://github.com/saltstack/salt", "refs/tags/v"},
+	"sslexpired":     {"git://github.com/shaftoe/sslexpired", "refs/tags/"},
 	"terraform":      {"git://github.com/hashicorp/terraform.git", "refs/tags/v"},
 	"vault":          {"git://github.com/hashicorp/vault", "refs/tags/v"},
 }

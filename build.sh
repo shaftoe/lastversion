@@ -19,7 +19,7 @@ usage() {
 
 build() {
     rm -f action.zip exec
-    env GOOS=linux GOARCH=amd64 go build -o exec lastversion.go
+    env GOOS=linux GOARCH=amd64 go build -o exec "${action}.go"
     zip action.zip exec git
 }
 
