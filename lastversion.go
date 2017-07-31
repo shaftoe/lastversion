@@ -18,7 +18,6 @@ var projects = map[string]gitRemote{
 	"chef":           {"git://github.com/chef/chef", "refs/tags/v"},
 	"consul":         {"git://github.com/hashicorp/consul", "refs/tags/v"},
 	"cpython":        {"git://github.com/python/cpython", "refs/tags/v"},
-	"docker":         {"git://github.com/docker/docker", "refs/tags/v"},
 	"fabric":         {"git://github.com/fabric/fabric", "refs/tags/"},
 	"git":            {"git://github.com/git/git", "refs/tags/v"},
 	"go":             {"git://github.com/golang/go", "refs/tags/go"},
